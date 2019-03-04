@@ -1,0 +1,25 @@
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.jumbotron{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.row {
+    background-color: white;
+    font-size:4.0mm;
+}
+
+footer {
+    background-color: #e9ecef;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    bottom:0px;
+  }
+
