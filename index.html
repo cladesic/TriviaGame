@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Triva Game</title>
+    <title>Trivia Game</title>
 </head>
 
 <body>
@@ -22,143 +23,82 @@
     <div class="container-fluid text-center">
         <div class="container">
             <div class="row">
-                    <div class="col-sm-6">
-                            <p>Here goes the question 1 here </p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline1" name="radioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline1">Answer 1</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline2" name="radioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline2">Answer 2</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline3" name="radioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline3">Answer 3</label>
-                            </div><br><br>
+                <div class="col-sm-6">
+                    <p id="question1"></p>
+                    <!-- False The Hurt Locker won-->
+                    <label><input type="radio" name="radio1" value="true">True </label>
+                    <label><input type="radio" name="radio1" value="false">False</label>
 
-                            <p>The next question 2 goes here for size</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline4" name="radioInline2" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline4">Answer 1</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline5" name="radioInline2" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline5">Answer 2</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline6" name="radioInline2" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline6">Answer 3</label>
-                            </div><br><br>
+                    <p id="question2"></p>
+                    <!-- True  Paul Newman starred in the movie-->
+                    <label><input type="radio" name="radio2" value="true">True</label>
+                    <label><input type="radio" name="radio2" value="false">False</label>
 
-                            <p>The next question 3 goes here for size</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline7" name="radioInline3" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline7">Answer 1</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline8" name="radioInline3" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline8">Answer 2</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline9" name="radioInline3" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline9">Answer 3</label>
-                            </div><br><br>
+                    <p id="question3"></p>
+                    <!--True -->
+                    <label><input type="radio" name="radio3" value="true">True</label>
+                    <label><input type="radio" name="radio3" value="false">False</label>
 
-                            <p>The next question 4 goes here for size</p>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline10" name="radioInline4" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline10">Answer 1</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline11" name="radioInline4" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline11">Answer 2</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radioInline12" name="radioInline4" class="custom-control-input">
-                                <label class="custom-control-label" for="radioInline12">Answer 3</label>
-                            </div> <br><br>
-                    </div>    
-                    <div class="col-sm-6">
-                        <p>The next question 5 goes here for size</p>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline13" name="radioInline5" class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline13">Answer 1</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline14" name="radioInline5" class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline14">Answer 2</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline15" name="radioInline5" class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline15">Answer 3</label>
-                        </div><br><br>
+                    <p id="question4"></p>
+                    <!--False Frodo Baggins-->
+                    <label><input type="radio" name="radio4" value="true">True</label>
+                    <label><input type="radio" name="radio4" value="false">False</label>
+                </div>
+                <div class="col-sm-6">
+                    <p id="question5"></p>
+                    <!--True-->
+                    <label><input type="radio" name="radio5" value="true">True</label>
+                    <label><input type="radio" name="radio5" value="false">False</label>
 
-               
-                    <p>The next question 6 goes here for size</p>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline16" name="radioInline6"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline16">Answer 1</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline17" name="radioInline6"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline17">Answer 2</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline18" name="radioInline6"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline18">Answer 3</label>
-                    </div><br><br>
-               
-                    <p>The next question goes 7 here for size</p>
-                    <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="radioInline19" name="radioInline7"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioInline19">Answer 1</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="radioInline20" name="radioInline7"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioInline20">Answer 2</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="radioInline21" name="radioInline7"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioInline21">Answer 3</label>
-                    </div><br><br>
+                    <p id="question6"></p>
+                    <!--False the right answer is The Wizard of Oz-->
+                    <label><input type="radio" name="radio6" value="true">True</label>
+                    <label><input type="radio" name="radio6" value="false">False</label>
 
-                    <p>The next question goes 8 here for size</p>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline22" name="radioInline8"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline22">Answer 1</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline23" name="radioInline8"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline23">Answer 2</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="radioInline24" name="radioInline8"
-                                class="custom-control-input">
-                            <label class="custom-control-label" for="radioInline24">Answer 3</label>
-                    </div><br><br>
-                
-            
-                    </div>
+                    <p id="question7"></p>
+                    <!-- True-->
+                    <label><input type="radio" name="radio7" value="true">True</label>
+                    <label><input type="radio" name="radio7" value="false">False</label>
+
+                    <p id="question8"></p>
+                    <!--False Leonardo DiCaprio-->
+                    <label><input type="radio" name="radio8" value="true">True</label>
+                    <label><input type="radio" name="radio8" value="false">False</label>
+                </div> <br><b>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="list-group-item"> Not Answered
+                            <span class="badge badge-info badge-pill">8</span>
+                        </li>
+                        <li class="list-group-item">Correct
+                            <span class="badge badge-success badge-pill">0</span>
+                        </li>
+                        <li class="list-group-item">Wrong
+                            <span class="badge badge-error badge-pill">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-4">
+                        <progress value="0" max="15" id="sbar"></progress>
+                            <p id="counting">15</p>
+                        </div>
+                        <div class="col-md-4">
+                        <button id="start">Start Game</button>
+                        </div>
+                        <div class="col-md-4">
+                        <p><input type="button" value="Submit"></p>
+                         </div>   
+                <script src="assets/javascript/app.js">
+        </script>
 
-
-
-    <script src="assets/javascript/app.js">
-    </script>
-    <footer class="container-fluid text-center">
-        <p> &copy;Created by Charles Ladesic</p>
-    </footer>
 </body>
 
 </html>
